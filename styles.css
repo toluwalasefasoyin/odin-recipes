@@ -1,0 +1,53 @@
+/* ===== HOMEPAGE STYLING (styles.css) ===== */
+
+/* Navbar container - holds title and menu side by side */
+.flex-container {
+    display: flex;                          /* Arrange items horizontally */
+    justify-content: space-between;         /* Title left, menu right */
+    align-items: center;                    /* Vertically center items */
+    background-color: #d9534f;              /* Red background (matches recipe pages) */
+    padding: 20px;                          /* Space inside navbar */
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Main title "Odin Recipes" */
+.title {
+    color: white;                           /* White text on red background */
+    font-family: Georgia, serif;            /* Elegant serif font */
+    margin: 0;                              /* No extra spacing */
+}
+
+.title h1 {
+    font-size: 2em;                         /* Large title */
+    margin: 0;                              /* Remove default margins */
+}
+
+/* Recipe menu list container */
+.recipes ul {
+    display: flex;                          /* Arrange links horizontally */
+    list-style: none;                       /* Remove bullet points */
+    padding: 0;                             /* No extra padding */
+    gap: 20px;                              /* Space between menu items */
+    margin: 0;                              /* No extra margins */
+}
+
+/* Individual recipe links */
+.recipes li {
+    padding: 10px 15px;                     /* Space inside each button */
+    background-color: rgba(255, 255, 255, 0.2);  /* Transparent white */
+    border: 1px solid white;                /* White border */
+    border-radius: 4px;                     /* Rounded corners */
+    transition: background-color 0.3s;     /* Smooth animation on hover */
+}
+
+.recipes li:hover {
+    background-color: rgba(255, 255, 255, 0.3);  /* Slightly more visible on hover */
+}
+
+/* Links inside menu items */
+.recipes a {
+    color: white;                           /* White text */
+    text-decoration: none;                  /* No underline */
+}
+
